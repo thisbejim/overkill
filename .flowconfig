@@ -1,0 +1,14 @@
+[include]
+<PROJECT_ROOT>/index.js
+
+[ignore]
+<PROJECT_ROOT>/node_modules/fbjs/*
+
+[libs]
+./interfaces/global.js
+
+[options]
+module.name_mapper='.*\(.css\)' -> 'CSSModule'
+module.system=haste
+strip_root=true
+esproposal.class_static_fields=enable
